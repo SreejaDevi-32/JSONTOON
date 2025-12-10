@@ -66,8 +66,8 @@ public class OpenAiClient implements LlmClient {
         // PROMPTS
         // -----------------------
         String systemPrompt =
-                "Return a JSON object with keys product_name, category, quantity, sale_date, " +
-                "location, ambiguous. Use null when unknown. No commentary.";
+                "Return a JSON object with keys task, location, season, friends, " +
+                "recipes, ambiguous. Use null when unknown. No commentary.";
         
         String userPrompt = "Text:\n" + text + "\nReturn JSON only.";
 
