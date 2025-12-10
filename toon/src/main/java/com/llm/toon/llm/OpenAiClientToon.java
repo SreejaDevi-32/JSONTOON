@@ -65,8 +65,8 @@ public class OpenAiClientToon implements LlmClient {
 
         // 🔥 ULTRA COMPACT TOON PROMPT (≈25 tokens)
         String systemPrompt =
-                "Return a TOON object with keys product_name, category, quantity, sale_date, " +
-                "location, ambiguous. Use null when unknown. No commentary.";
+                "Return a TOON object with keys task, location, season, friends, " +
+                "recipes, ambiguous. Use null when unknown. No commentary.";
 
         String userPrompt = "Text: " + text;
 
